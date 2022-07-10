@@ -41,6 +41,10 @@ $(document).ready(function() {
 		// Initialize all div with carousel class
     var carousels = bulmaCarousel.attach('.carousel', options);
 
+    // document.getElementsByClassName('slider')[0].style.marginBottom = '25px';
+
+    // document.getElementsByClassName('slider-pagination')[0].style.marginBottom = '-25px';
+
     // Loop on each carousel initialized
     for(var i = 0; i < carousels.length; i++) {
     	// Add listener to  event
