@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <!-- <link rel="stylesheet" href="./static/css/fontawesome.all.min.css"> -->
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
@@ -119,57 +119,93 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-widescreen">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="https://user-images.githubusercontent.com/55628873/173112861-93e07ac6-5303-44db-940c-68b75a947085.mp4"
-                type="video/mp4">
-      </video>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-widescreen">
-    <!-- Abstract. -->
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            We propose CLIP-Actor, a text-driven motion recommendation and neural mesh stylization system for human mesh animation.
-            CLIP-Actor animates a 3D human mesh to conform to a text prompt by recommending a motion sequence and optimizing mesh style attributes.
-            Prior work fails to generate plausible results when the pose of an artist designed mesh does not conform to the text from the beginning. 
-            Instead, we build a text-driven human motion recommendation system by leveraging a large-scale human motion dataset with language labels. 
-            Given a natural language prompt, CLIP-Actor suggests a text-conforming human motion in a coarse-to-fine manner. 
-            Then our novel neural style optimization detailizes and texturizes the recommended mesh sequence to conform to the prompt in a temporally-consistent and pose-agnostic
-            manner. 
-            We further propose the spatio-temporal view augmentation and mask-weighted embedding attention, which stabilizes the optimization process by leveraging multi-frame human motion and rejecting poorly rendered views. We demonstrate that CLIP-Actor produces plausible and human-recognizable style 3D human mesh in motion with detailed
-            geometry and texture solely from a natural language prompt.
-          </p>
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-widescreen">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <video poster="" id="alan_turing" autoplay controls muted loop playsinline height="100%">
+            <source src="https://user-images.githubusercontent.com/108866746/178134873-eb8d824d-24a0-4a7f-b3fc-643beaf81151.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item ">
+          <video poster="" id="freddie_mercury" autoplay controls muted loop playsinline height="100%">
+            <source src="https://user-images.githubusercontent.com/108866746/178134879-25bc6cc0-4562-4a2d-ba5b-9f18001c0622.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" id="alan_turing" autoplay controls muted loop playsinline height="100%">
+            <source src="https://user-images.githubusercontent.com/108866746/178134873-eb8d824d-24a0-4a7f-b3fc-643beaf81151.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item ">
+          <video poster="" id="freddie_mercury" autoplay controls muted loop playsinline height="100%">
+            <source src="https://user-images.githubusercontent.com/108866746/178134879-25bc6cc0-4562-4a2d-ba5b-9f18001c0622.mp4"
+                    type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
+  </div>
+</section>
 
-<section class="section" id="BibTeX">
-  <div class="container is-widescreen content">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">BibTeX</h2>
-        <pre><code>@misc{CLIP-Actor,
-          title={CLIP-Actor: Text-Driven Recommendation and Stylization for Animating Human Meshes},
-          author={Kim Youwang and Kim Ji-Yeon and Tae-Hyun Oh},
-          year={2022},
-          eprint={2206.04382},
-          archivePrefix={arXiv},
-          primaryClass={cs.CV}}
-        </code></pre>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-widescreen">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+
+          <div class="video section">
+            <h2 class="title is-3">Video</h2>
+              <div class="supp_video block has-text-centered">
+                <video id="teaser" autoplay muted loop playsinline width="60%">
+                  <source src="https://user-images.githubusercontent.com/55628873/173112861-93e07ac6-5303-44db-940c-68b75a947085.mp4" 
+                  type="video/mp4">
+                </video>
+              </div>
+          </div>
+
+          <div class="abstract section">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                We propose <strong><em>CLIP-Actor</em></strong>, <strong>a text-driven motion recommendation</strong> and <strong>neural mesh stylization system</strong> for human mesh animation.
+                CLIP-Actor animates a 3D human mesh to conform to a text prompt by recommending a motion sequence and optimizing mesh style attributes.
+              </p>
+                Prior work fails to generate plausible results when the pose of an artist designed mesh does not conform to the text from the beginning. 
+                Instead, we build a text-driven human motion recommendation system by leveraging a large-scale human motion dataset with language labels. 
+                Given a natural language prompt, CLIP-Actor suggests a text-conforming human motion in a coarse-to-fine manner. 
+                Then our novel neural style optimization detailizes and texturizes the recommended mesh sequence to conform to the prompt in a temporally-consistent and pose-agnostic
+                manner.
+                We further propose the spatio-temporal view augmentation and mask-weighted embedding attention, which stabilizes the optimization process by leveraging multi-frame human motion and rejecting poorly rendered views. We demonstrate that CLIP-Actor produces plausible and human-recognizable style 3D human mesh in motion with detailed
+                geometry and texture solely from a natural language prompt.
+              </p>
+            </div>
+          </div>
+
+          <div class="bibtex section">
+            <h2 class="title is-3">BibTeX</h2>
+            <pre>
+              <code>
+                @inproceedings{youwang2022clipactor,
+                title={CLIP-Actor: Text-Driven Recommendation and Stylization for Animating Human Meshes},
+                author={Kim Youwang and Kim Ji-Yeon and Tae-Hyun Oh},
+                year={2022},
+                booktitle={ECCV}
+                }
+              </code>
+            </pre>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
 <footer class="footer">
