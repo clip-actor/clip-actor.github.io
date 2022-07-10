@@ -1,6 +1,7 @@
 body {
   /*font-family: 'Noto Sans', sans-serif;*/
-  font-family: 'Merriweather', serif;;
+  font-family: 'Merriweather', serif;
+  color: Black;
 }
 
 .footer .icon-link {
@@ -35,10 +36,15 @@ body {
   /*font-family: 'Google Sans', sans-serif;*/
 }
 
+.abstract{
+  font-size: 1.1em;
+}
+
 
 .publication-title {
   font-size:  48px;
   font-weight: 700;
+  margin-top:  0.5em;
 }
 
 .publication-banner {
@@ -66,13 +72,13 @@ body {
 }
 
 .publication-authors {
-  margin-top: 5px;
+  margin-top: 0.5rem;
   font-size:  1.3em;
     /*font-family: 'Google Sans', sans-serif;*/
 }
 
 .publication-venue {
-  margin-top: 10px;
+  margin-top: 0.5rem;
   font-size:  1.4em;
 }
 
@@ -138,7 +144,7 @@ body {
 .results-carousel .item {
   margin: 5px;
   overflow: hidden;
-  border: 1px solid #bbb;
+  /*border: 1px solid #bbb;*/
   border-radius: 10px;
   padding: 0;
   font-size: 0;
@@ -175,4 +181,9 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+
+.section{
+  padding: 0;
+  margin-top: 5em;
 }
