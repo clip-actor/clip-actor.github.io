@@ -183,6 +183,10 @@ body {
   border-radius: 5px;
 }
 
+.license{
+  text-align: center;
+}
+
 .section{
   padding: 0;
   margin-top: 5em;
