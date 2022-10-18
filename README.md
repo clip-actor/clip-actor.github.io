@@ -1,6 +1,6 @@
 # CLIP-Actor
 
-This is the repository that contains source code for the [Nerfies website](https://clip-actor.github.io).
+This is the repository that contains source code for the [CLIP-Actor website](https://clip-actor.github.io).
 
 <!-- If you find CLIP-Actor useful for your work please cite:
 ```

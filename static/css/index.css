@@ -9,11 +9,13 @@ body {
     color: #000;
 }
 .button.is-link{
-  background-color: #337ab7;
+  /*background-color: #337ab7;*/
+  background-color: #ed7d31;
 }
 
 .button.is-link:hover{
-  background-color: #FF5B33;
+  /*background-color: #FF5B33;*/
+  background-color: #7a7a7a;
 }
 
 .link-block a {
@@ -67,19 +69,16 @@ body {
     font-size: 32px;
     font-weight: 700;
 }
-.publication-authors {
-
-}
 
 .publication-authors {
-  margin-top: 0.5rem;
+  /*margin-top: 0.5rem;*/
   font-size:  1.3em;
     /*font-family: 'Google Sans', sans-serif;*/
 }
 
 .publication-venue {
-  margin-top: 0.5rem;
-  font-size:  1.4em;
+  margin-top: 0.5em;
+  font-size:  1.5em;
 }
 
 .publication-awards {
@@ -89,8 +88,8 @@ body {
 }
 
 .publication-authors a {
-   /*color: hsl(204, 86%, 53%);*/
-   color: #337ab7;
+   color: hsl(204, 86%, 53%);
+   /*color: #337ab7;*/
 }
 
 .publication-authors a:hover {
@@ -187,4 +186,9 @@ body {
 .section{
   padding: 0;
   margin-top: 5em;
+}
+
+.content{
+  padding:  0 5em;
+  color: #363636;
 }
